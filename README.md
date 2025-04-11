@@ -1,8 +1,5 @@
-# Pref-FEND论文复现-机器学习大作业
+# Pref-FEND论文
 
-1. 姓名：郭惠洪。
-2. 基本说明：这个仓库为“Integrating Pattern- and Fact-based Fake News Detection via Model Preference Learning”这篇论文的复现工作。
-3. 这篇论文的相关官方信息:
 > **Integrating Pattern- and Fact-based Fake News Detection via Model Preference Learning.**
 >
 > Qiang Sheng\*, Xueyao Zhang\*, Juan Cao, and Lei Zhong.
