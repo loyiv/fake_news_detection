@@ -7,31 +7,36 @@
 > *Proceedings of the 30th ACM International Conference on Information and Knowledge Management (CIKM 2021)*
 >
 > [PDF](https://dl.acm.org/doi/10.1145/3459637.3482440) / [Poster](https://www.zhangxueyao.com/data/cikm2021-PrefFEND-poster.pdf) / [Code](https://github.com/ICTMCG/Pref-FEND)
-4. bert-base-cased获取：[bert-base-cased获取](https://github.com/rohithjoginapally/bert-base-cased)。
+
 
 
 ## 数据集
 
 论文原始实验数据集可以在“数据集”文件夹中看到，包括[Weibo Dataset](https://github.com/ICTMCG/Pref-FEND/tree/main/dataset/Weibo)和[Twitter Dataset](https://github.com/ICTMCG/Pref-FEND/tree/main/dataset/Twitter)。不过请注意，只有在提交了[“Application to Use the Datasets for Pattern- and Fact-based Joint Fake News Detection”](https://forms.office.com/r/HF00qdb3Zk)之后，您才能下载获取该数据集。
 
-课程数据集（包括原始的和处理后的）存放在“Pref-FEND-master/dataset”中。不过，由于该数据集太大，故而没有上传到GitHub，您可以通过这个链接获取：[机器学习课程数据集获取](https://www.alipan.com/s/PqyZphvLVeq)。
+此外，我还使用了其它数据集（包括原始的和处理后的）。比如[CHEF]（https://github.com/THU-BPM/CHEF）（强烈推荐🤓），GossipCop,不过，由于该数据集太大，故而没有上传到GitHub。需要的朋友请email我：loyiv5477@gmail.com
 
 
 ## 代码相关
 
-### Key Requirements
+### 📦安装依赖环境
 
-请参考`requirements.txt`。
+请确保你已安装 Python 和 pip，然后运行以下命令安装本项目所需的全部依赖：
+
+```bash
+pip install -r requirements.txt
 
 ### 准备工作
 
 #### 步骤1：Stylistic Tokens & Entities Recognition
 
-对于原始数据集而言，这一步不是必需的，因为申请得到的数据集已经在json文件中提供了已识别的结果。
+这一步是进行词项的识别：实体词，风格词，其它词。你可以通过`process.py`来对数据集进行处理。正常来说，执行完后会得到raw目录下识别好的post,article的json文件。
 
-对于课程数据集而言，“dataset”文件夹中的“gossip”文件夹中存放了json文件，其中提供了课程数据集的识别结果。您也可以通过`process.py`来对新的数据集进行此准备工作。
+
 
 #### 步骤2：Tokenize
+
+顾名思义，这一步是tokenizer，使用的预训练模型是谷歌的bert，值得注意的是，如果所使用的数据集为中文，请采用bert-cased-chinese，英文则为bert-cased-english。bert-base-cased获取：[bert-base-cased获取](https://github.com/rohithjoginapally/bert-base-cased)
 
 ```
 cd preprocess/tokenize
