@@ -1,5 +1,5 @@
 # Twitter Dataset
-
+json文件太大了，这里没传完哦
 ## Access
 
 You will be shared the dataset by email after an ["Application to Use the Datasets for Pattern- and Fact-based Joint Fake News Detection"](https://forms.office.com/r/HF00qdb3Zk) has been submitted.
