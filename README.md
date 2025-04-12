@@ -5,7 +5,7 @@
 > *Proceedings of the 30th ACM International Conference on Information and Knowledge Management (CIKM 2021)*  
 >
 > 📄 [PDF](https://dl.acm.org/doi/10.1145/3459637.3482440) / 🎞️ [Poster](https://www.zhangxueyao.com/data/cikm2021-PrefFEND-poster.pdf) / 💻 [Code](https://github.com/ICTMCG/Pref-FEND)
-
+>Pref-FEND 是一种融合“语言模式”与“事实证据”的双分支虚假新闻检测模型。该模型通过异构动态图卷积网络（HetDGCN）分别学习文本中风格性词与实体词的模式偏好与事实偏好，引导两个子模型分别关注语言表达倾向与事实支持程度。在推理阶段，通过融合两种偏好感知特征，实现更全面、更鲁棒的虚假新闻判别。
 ---
 ![基本框架](image/偏好感知.png)
 ## 📂 数据集说明
