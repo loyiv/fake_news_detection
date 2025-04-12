@@ -7,7 +7,7 @@
 > 📄 [PDF](https://dl.acm.org/doi/10.1145/3459637.3482440) / 🎞️ [Poster](https://www.zhangxueyao.com/data/cikm2021-PrefFEND-poster.pdf) / 💻 [Code](https://github.com/ICTMCG/Pref-FEND)
 
 ---
-
+![基本框架](image/偏好感知.png)
 ## 📂 数据集说明
 
 原始论文实验所用数据集包含：
@@ -67,6 +67,7 @@ python init_graph.py --dataset [dataset] --max_nodes [max_tokens_num]
 ```
 
 ---
+![异构动态图卷积](image/异构动态图卷积.png)
 
 ### 步骤 4：事实模型准备（可选）
 
@@ -87,6 +88,8 @@ python retrieve.py --dataset [dataset]
 ---
 
 ### 步骤 5：特定模型组件预处理（可选）
+![两类模型](image/两类模型.png)
+
 
 #### 5.1 EANN-Text 模型
 
@@ -122,7 +125,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataset 'weibo' \
 --save 'ckpts/BiLSTM+DeClarE_with_Pref-FEND'
 ```
 
-这才用的基础模型分别为BiLSTM和DeClarE。结果将保存在 `model/ckpts/BiLSTM+DeClarE_with_Pref-FEND`，是一个.pt文件。
+这采用的基础模型分别为BiLSTM和DeClarE。结果将保存在 `model/ckpts/BiLSTM+DeClarE_with_Pref-FEND`，是一个.pt文件。
 
 ---
 
