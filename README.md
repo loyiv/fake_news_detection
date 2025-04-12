@@ -1,4 +1,4 @@
-# Pref-FEND 论文复现
+# Pref-FEND
 
 > **Integrating Pattern- and Fact-based Fake News Detection via Model Preference Learning**  
 > Qiang Sheng\*, Xueyao Zhang\*, Juan Cao, and Lei Zhong  
