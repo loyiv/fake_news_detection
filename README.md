@@ -127,6 +127,8 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataset 'weibo' \
 
 这采用的基础模型分别为BiLSTM和DeClarE。结果将保存在 `model/ckpts/BiLSTM+DeClarE_with_Pref-FEND`，是一个.pt文件。
 
+ps:本人消费级显卡只有一张，所以这里CUDA_VISIBLE_DEVICES=0。
+
 ---
 
 ## 📊 实验结果
